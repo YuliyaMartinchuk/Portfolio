@@ -1,0 +1,39 @@
+.project {
+    width: 250px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    background-color: #9e9ea2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.link {
+    background-color: #666667;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+
+.title {
+    background-color: #a27dc4;
+
+}
+
+.description {
+    background-color: rgba(253, 66, 66, 0.75);
+    width: 100%;
+    padding-bottom: 10px;
+}
+

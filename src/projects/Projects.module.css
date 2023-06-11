@@ -1,23 +1,22 @@
-.skillsWrapper {
+.projectsWrapper {
     height: 100vh;
-    background-color: rebeccapurple;
+    background-color: #9854e0;
 
 }
 
-.skillsContainer {
+.projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
     border: black 1px solid;
  }
 
 
-
-
 .title {
     background-color: #a27dc4;
+
 }
 
-.skills {
+.projects {
     border: black 1px solid;
     width: 100%;
     display: flex;
@@ -25,9 +24,8 @@
     flex-wrap: wrap;
 }
 
-
 @media screen and (max-width: 768px) {
-    .skills {
+    .projects {
         width: 100%;
         justify-content: center;
     }

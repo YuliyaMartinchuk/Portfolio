@@ -1,11 +1,23 @@
 .skill {
     width: 250px;
     background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
+.icon {
+    height: 60px;
+    width: 60px;
+    background-color: #f3ecec;
+}
 
-
-
+.description {
+    background-color: rgba(253, 66, 66, 0.75);
+    width: 100%;
+    padding-bottom: 10px;
+}
 
 
 
