@@ -1,7 +1,8 @@
 import React from 'react';
-import style from './Skill.module.css'
+import {SkillContainer, SkillDescription, SkillImage, SkillTitle} from './SkillStyle';
 
 export type PropsType = {
+    image: string
     title: string
     description: string
 }
@@ -9,11 +10,11 @@ export type PropsType = {
 
 export const Skill = (props: PropsType) => {
     return (
-        <div className={style.skill}>
-            <div className={style.icon}></div>
-            <h3>{props.title}</h3>
-            <span className={style.description}>{props.description}</span>
-        </div>
+        <SkillContainer >
+            <SkillImage backgroundImage={props.image} />
+            <SkillTitle>{props.title}</SkillTitle>
+            <SkillDescription>{props.description}</SkillDescription>
+        </SkillContainer>
     );
 };
 
