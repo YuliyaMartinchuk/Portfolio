@@ -8,6 +8,11 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border: 1px solid;
+  margin: 2% 0;
+  @media (max-width: 250px) {
+    width: 100%;
+  }
 `
 
 type ProjectIconsType = {

@@ -26,6 +26,10 @@ export const MainContainer = styled.div`
 export const MainText = styled.div`
   width: 350px;
   background-color: #f3ecec;
+  @media  (max-width: 350px) {
+    width: 100%;
+    word-break: break-all;
+  }
 `
 
 type MainImageType = {
@@ -42,5 +46,8 @@ export const MainImage = styled.div<MainImageType>`
   background-position: 50%;
   &:hover {
     filter: brightness(0.7);
+  }
+  @media  (max-width: 350px) {
+    width: 100%;
   }
 `

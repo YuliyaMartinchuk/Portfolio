@@ -26,18 +26,6 @@ export const Skills = () => {
             </Container>
         </SkillsWrapper>
 
-
-
-        // <div className={style.skillsWrapper}>
-        //     <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-        //         <h2 className={style.title}>Skills</h2>
-        //         <div className={style.skills}>
-        //             <Skill title={"Js"} description={description1} image={image1}/>
-        //             <Skill title={"CSS"} description={description2} image={image2}/>
-        //             <Skill title={"React"} description={description3} image={image3}/>
-        //         </div>
-        //     </div>
-        // </div>
     );
 };
 

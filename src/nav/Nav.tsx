@@ -1,14 +1,14 @@
 import React from 'react';
-import style from './Nav.module.css'
+import {NavElement, NavWrapper} from "./NavStyle";
 
 export const Nav = () => {
     return (
-        <div className={style.nav}>
-          <a href={""}>Main</a>
-          <a href={""}>Skills</a>
-          <a href={""}>Projects</a>
-          <a href={""}>Contacts</a>
-        </div>
+        <NavWrapper >
+          <NavElement href={""}>Main</NavElement>
+          <NavElement href={""}>Skills</NavElement>
+          <NavElement href={""}>Projects</NavElement>
+          <NavElement href={""}>Contacts</NavElement>
+        </NavWrapper>
     );
 };
 
