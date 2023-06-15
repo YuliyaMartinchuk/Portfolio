@@ -4,7 +4,7 @@ import React from "react";
 import {
     FooterContact,
     FooterContacts,
-    FooterContainer,
+    FooterContainer, FooterInformation,
     FooterTitle,
     FooterWrapper,
 } from "./FooterStyle";
@@ -22,6 +22,7 @@ export const Footer = () => {
                         <FooterContact image={image3}/>
                         <FooterContact image={image4}/>
                     </FooterContacts>
+                    <FooterInformation>© 2023</FooterInformation>
                 </FooterContainer>
             </Container>
         </FooterWrapper>

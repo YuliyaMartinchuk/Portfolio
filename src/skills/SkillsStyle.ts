@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const SkillsWrapper = styled.div`
-
+  
   background-color: #9854e0;
-
 `
 export const SkillsContainer = styled.div`
   height: 100%;

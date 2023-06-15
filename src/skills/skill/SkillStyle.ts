@@ -9,6 +9,8 @@ export const SkillContainer = styled.div`
   text-align: center;
   border: 1px solid;
   margin: 2% 0;
+
+  padding: 10px;
   @media (max-width: 250px) {
     width: 100%;
   }
@@ -42,4 +44,5 @@ export const SkillDescription = styled.span`
   background-color: rgba(255, 151, 151, 0.75);
   width: 100%;
   padding-bottom: 10px;
+ 
 `

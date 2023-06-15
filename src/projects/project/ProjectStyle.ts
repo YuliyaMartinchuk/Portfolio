@@ -10,6 +10,8 @@ export const ProjectContainer = styled.div`
   text-align: center;
   border: 1px solid;
   margin: 2% 0;
+
+  padding: 10px;
   @media (max-width: 250px) {
     width: 100%;
   }

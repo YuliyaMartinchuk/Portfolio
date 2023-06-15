@@ -10,7 +10,7 @@ export const Container = styled.div`
   border: black solid 1px;
   flex-wrap: wrap;
 
-  @media  (max-width: 430px) {
+  @media  (max-width: 300px) {
     width: 100%;
   }
 `

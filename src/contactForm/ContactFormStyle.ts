@@ -16,6 +16,7 @@ export const ContactFormContainer = styled.div`
 
 export const ContactFormMainTitle = styled.h2`
   background-color: #f3c3c3;
+ 
 `
 
 export const ContactFormTitle = styled.h2`
@@ -24,6 +25,10 @@ export const ContactFormTitle = styled.h2`
   width:180px;
   color:#78788c;
   border-bottom:3px solid #78788c;
+  @media  (max-width: 350px) {
+    width: 80%;
+    word-break: break-all;
+  }
   
 `
 export const ContactFormText = styled.h3`
@@ -32,6 +37,10 @@ export const ContactFormText = styled.h3`
     margin:28px 0 0;
     font-size:14px;
     color:#5a5a5a}
+  @media  (max-width: 350px) {
+
+    word-break: break-all;
+  }
 `
 
 export const Form = styled.form`
@@ -45,8 +54,12 @@ export const Form = styled.form`
   max-width:calc(100vw - 40px);
   box-sizing:border-box;
   font-family:'Montserrat',sans-serif;
-  position:relative
-;
+  position:relative;
+  @media  (max-width: 450px) {
+    width: 95%;
+    height: 60%;
+    
+  }
 `
 
 

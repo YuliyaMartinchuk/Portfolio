@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ProjectsWrapper = styled.div`
   background-color: #7ed7ef;
-
 `
+
 export const ProjectsContainer = styled.div`
   height: 100%;
   width: 100%;
@@ -28,6 +28,7 @@ export const ProjectsElements = styled.ul`
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  
 
   @media (max-width: 630px) {
     width: 100%;

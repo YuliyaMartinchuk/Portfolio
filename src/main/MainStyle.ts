@@ -26,9 +26,11 @@ export const MainContainer = styled.div`
 export const MainText = styled.div`
   width: 350px;
   background-color: #f3ecec;
-  @media  (max-width: 350px) {
+  text-align: center;
+  @media  (max-width: 450px) {
     width: 100%;
-    word-break: break-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 `
 
