@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsWrapper = styled.div`
-  background-color: #7ed7ef;
+ 
 `
 
 export const ProjectsContainer = styled.div`
@@ -15,6 +15,13 @@ export const ProjectsContainer = styled.div`
 
 export const ProjecstTitle = styled.h2`
   background-color: #a27dc4;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Butler, sans-serif;
+  font-size: 55px;
+  font-weight: 300;
+  line-height: .9;
 
   &:hover {
     filter: brightness(0.7);
@@ -29,7 +36,6 @@ export const ProjectsElements = styled.ul`
   padding: 0;
   margin: 0;
   
-
   @media (max-width: 630px) {
     width: 100%;
     justify-content: center;

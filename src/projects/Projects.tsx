@@ -10,7 +10,9 @@ export const Projects = () => {
         <ProjectsWrapper>
             <Container>
                 <ProjectsContainer>
-                    <ProjecstTitle>Projects</ProjecstTitle>
+                    <div>
+                        <ProjecstTitle>Projects</ProjecstTitle>
+                    </div>
                     <ProjectsElements>
                         <ProjectsElement>
                             <Project title={"Project"} description={description1} image={image1}/>

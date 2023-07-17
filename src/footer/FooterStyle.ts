@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
-  background-color: rgba(30, 30, 147, 0.89);
   padding: 100px 0 30px;
 
 `

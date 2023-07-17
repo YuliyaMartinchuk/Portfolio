@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
   width: 250px;
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   border: 1px solid;
   margin: 2% 0;
+  background-color: #1d1d15;
 
   padding: 10px;
   @media (max-width: 250px) {

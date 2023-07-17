@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const SkillContainer = styled.div`
   width: 250px;
-  background-color: #ffffff;
+  background-color: #1d1d15;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   border: 1px solid;
   margin: 2% 0;
-
   padding: 10px;
   @media (max-width: 250px) {
     width: 100%;

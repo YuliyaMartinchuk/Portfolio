@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const MainWrapper = styled.div`
   border: black 1px solid;
-  height: 100vh;
-  background-color: aquamarine;
 `
 export const MainContainer = styled.div`
   height: 100%;
@@ -13,6 +11,7 @@ export const MainContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   border: black solid 1px;
+  min-height: 100vh;
   
   @media  (max-width: 830px) {
     width: 100%;

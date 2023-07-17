@@ -24,7 +24,7 @@ export const ContactForm = () => {
                        <Field placeholder = "Let us know how to contact you back.."/>
                        <ContactFormText> {"Leave your message:"}</ContactFormText>
                        <Field placeholder = "What would you like to tell me..."/>
-                       <ButtonForm>Send Message</ButtonForm>
+                       <ButtonForm type={"submit"}>Send Message</ButtonForm>
                    </Form>
 
                 </ContactFormContainer>

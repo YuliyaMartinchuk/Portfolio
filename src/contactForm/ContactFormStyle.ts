@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactFormWrapper = styled.div`
-  background-color: #9854e0;
+  min-height: 100vh;
 `
 
 export const ContactFormContainer = styled.div`
