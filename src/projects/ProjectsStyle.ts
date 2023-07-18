@@ -14,11 +14,10 @@ export const ProjectsContainer = styled.div`
 `
 
 export const ProjecstTitle = styled.h2`
-  background-color: #a27dc4;
   text-transform: uppercase;
-  margin-top: 0;
+  margin-top: 3%;
   margin-bottom: 0;
-  font-family: Butler, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 55px;
   font-weight: 300;
   line-height: .9;

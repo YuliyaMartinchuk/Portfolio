@@ -11,7 +11,7 @@ export const Projects = () => {
             <Container>
                 <ProjectsContainer>
                     <div>
-                        <ProjecstTitle>Projects</ProjecstTitle>
+                        <ProjecstTitle>Branding</ProjecstTitle>
                     </div>
                     <ProjectsElements>
                         <ProjectsElement>
