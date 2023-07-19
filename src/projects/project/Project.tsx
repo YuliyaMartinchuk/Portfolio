@@ -1,20 +1,20 @@
 import React from 'react';
-import {ProjectContainer, ProjectDescription, ProjectImage, ProjectLink, ProjectTitle} from "./ProjectStyle";
+import {ProjectContainer, ProjectDescription, ProjectImage} from "./ProjectStyle";
+import {SubTitle} from "../../common/styles/common";
 
-export type PropsType = {
+export type ProjectType = {
     image: string
     title: string
     description: string
 }
 
-
-export const Project = (props: PropsType) => {
+export const Project = (props: ProjectType) => {
     return (
         <ProjectContainer >
             <ProjectImage backgroundImage={props.image}>
-                <ProjectLink>See project</ProjectLink>
+                <a>See project</a>
             </ProjectImage>
-            <ProjectTitle>{props.title}</ProjectTitle>
+            <SubTitle>{props.title}</SubTitle>
             <ProjectDescription>{props.description}</ProjectDescription>
         </ProjectContainer>
     );

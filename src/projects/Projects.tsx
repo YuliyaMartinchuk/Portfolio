@@ -1,26 +1,40 @@
 import React from 'react';
-import {description1, description2, image1, image2} from "./description/description";
-import {ProjecstTitle, ProjectsWrapper, ProjectsElements, ProjectsElement} from "./ProjectsStyle"
+import {image1, image2} from "./description/description";
+import {ProjectsWrapper,} from "./ProjectsStyle"
 import {Container} from "../common/styles/Container";
 import {ProjectsContainer} from "./ProjectsStyle";
-import {Project} from "./project/Project";
+import {Project, ProjectType} from "./project/Project";
+import {Title} from '../common/styles/common';
+
+
+const project: ProjectType[] = [
+    {
+        image: image1,
+        title: 'Todolist',
+        description: 'About Todolist'
+    },
+    {
+        image: image2,
+        title: 'Social Network',
+        description: 'About Social Network'
+    },
+]
 
 export const Projects = () => {
     return (
         <ProjectsWrapper>
             <Container>
                 <ProjectsContainer>
-                    <div>
-                        <ProjecstTitle>Branding</ProjecstTitle>
-                    </div>
-                    <ProjectsElements>
-                        <ProjectsElement>
-                            <Project title={"Project"} description={description1} image={image1}/>
-                        </ProjectsElement>
-                        <ProjectsElement>
-                            <Project title={"Project"} description={description2} image={image2}/>
-                        </ProjectsElement>
-                    </ProjectsElements>
+                    <Title>Projects</Title>
+                    <ul>{project.map((project) => (
+                        <li>
+                            <Project image={project.image}
+                                     title={project.title}
+                                     description={project.description}
+                            />
+                        </li>
+                    ))}
+                    </ul>
                 </ProjectsContainer>
             </Container>
         </ProjectsWrapper>

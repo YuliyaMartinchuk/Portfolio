@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+type ProjectIconsType = {
+    backgroundImage: string
+}
 
 export const ProjectContainer = styled.div`
   width: 250px;
@@ -17,9 +20,6 @@ export const ProjectContainer = styled.div`
   }
 `
 
-type ProjectIconsType = {
-  backgroundImage:string
-}
 
 export const ProjectImage = styled.div<ProjectIconsType>`
   display: flex;
@@ -32,32 +32,27 @@ export const ProjectImage = styled.div<ProjectIconsType>`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  &:hover {
-    filter: brightness(0.7);
-  }
-`
-
-export const ProjectLink = styled.a`
-  background-color: #666667;
-  padding: 15px 25px;
-  cursor: pointer;
-  opacity: 0.7;
-  &:hover {
-    filter: brightness(0.7);
-  }
-  &:active {
-    filter: brightness(1);
-  }
-
-`
-
-export const ProjectTitle = styled.h3`
-  background-color: rgba(91, 168, 252, 0.84);
 
   &:hover {
     filter: brightness(0.7);
   }
+
+  a {
+    background-color: #666667;
+    padding: 15px 25px;
+    cursor: pointer;
+    opacity: 0.7;
+    &:hover {
+      filter: brightness(0.7);
+    }
+    &:active {
+      filter: brightness(1);
+    }
+  }
 `
+
+
+
 
 export const ProjectDescription = styled.span`
   background-color: rgba(255, 151, 151, 0.75);

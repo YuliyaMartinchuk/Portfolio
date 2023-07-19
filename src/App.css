@@ -2,3 +2,14 @@
     background-color: #ebece6;
 }
 
+@font-face {
+    font-family: 'ButlerLight';
+    src: url('./assets/fonts/Butler_Webfont/Butler-Light.woff2') format('woff2'),
+    url('./assets/fonts/Butler_Webfont/Butler-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'ButlerLight',sans-serif;
+}
