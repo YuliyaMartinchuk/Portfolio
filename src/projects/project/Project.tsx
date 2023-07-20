@@ -1,6 +1,6 @@
 import React from 'react';
-import {ProjectContainer, ProjectDescription, ProjectImage} from "./ProjectStyle";
-import {SubTitle} from "../../common/styles/common";
+import {DescriptionContainer, ImageContainer, ProjectContainer} from "./ProjectStyle";
+
 
 export type ProjectType = {
     image: string
@@ -10,12 +10,18 @@ export type ProjectType = {
 
 export const Project = (props: ProjectType) => {
     return (
-        <ProjectContainer >
-            <ProjectImage backgroundImage={props.image}>
-                <a>See project</a>
-            </ProjectImage>
-            <SubTitle>{props.title}</SubTitle>
-            <ProjectDescription>{props.description}</ProjectDescription>
+        <ProjectContainer>
+            <div>
+                <ImageContainer>
+                    <img src={props.image}/>
+                    <a>See project</a>
+                </ImageContainer>
+
+                <DescriptionContainer>
+                <h3>{props.title}</h3>
+                <p>{props.description}</p>
+                    </DescriptionContainer>
+                </div>
         </ProjectContainer>
     );
 };
