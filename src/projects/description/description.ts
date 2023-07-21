@@ -1,6 +1,12 @@
-export const description1: string = "test text test text test text test text  " +
-    "test text test text test text test text test text test text test text "
-export const description2: string = "test text test text test text test text " +
-    "test text test text test text test text test text test text test text "
-export const image1: string = "https://us.123rf.com/450wm/almazovadolzhenko/almazovadolzhenko2006/almazovadolzhenko200600066/148395478-hand-drawn-doodle-set-for-bullet-journal-vector-illustration-lettering-and-elements-for-notebook.jpg?ver=6"
-export const image2: string = "https://i.pinimg.com/564x/19/1c/d3/191cd36777a79c967a8f05bd1b230d29.jpg"
+export const descriptionTodolist: string = "Todolist is a task management application designed for those who want to organize their lives and increase their productivity. This application provides an easy and convenient way to create, track and manage tasks." +
+    "Todolist is designed to help people manage their time and improve their work efficiency. This application allows users to easily create new lists with different purposes, with new tasks, mark the status of these tasks (completed / failed)." +
+    "Todolist is an indispensable application for every person."
+export const descriptionSocialNetWork: string = "SocialSphere is a unique social network designed with the needs and interests of users in mind. The purpose of the network is to create a space where people can connect, share their thoughts, ideas and experiences, find new friends and mentors, and expand their horizons." +
+    "SocialSphere is a social network created for people who want to share their ideas and find support in a community of like-minded people." + "Todolist is an indispensable application for every person."
+export const descriptionCalculator: string = "SmartCalc is a calculator designed to help you easily perform calculations and solve mathematical problems. The calculator provides users with a simple and intuitive interface to quickly and efficiently perform any calculation." +
+    " SmartCalc to help people simplify and speed up their work with mathematical calculations. The calculator provides fast and accurate results in all operations, allowing users to save time and improve their efficiency."
+export const descriptionProjects: string =  "This section contains projects developed by me.\n" +
+    "I hope that my projects will help you better understand my professional experience and skills, and I will be happy to answer any questions you may have while viewing my work."
+export const todolist: string = "https://us.123rf.com/450wm/almazovadolzhenko/almazovadolzhenko2006/almazovadolzhenko200600066/148395478-hand-drawn-doodle-set-for-bullet-journal-vector-illustration-lettering-and-elements-for-notebook.jpg?ver=6"
+export const socialNetWork: string = "https://previews.123rf.com/images/jemastock/jemastock1602/jemastock160203417/52765018-people-concept-with-social-network-icon-design.jpg"
+export const calculator: string = "https://img.myloview.com/stickers/calculator-icon-vector-calculator-icon-isolated-on-white-background-calculator-icon-simple-and-modern-for-app-web-and-design-calculator-icon-vector-illustration-700-238116809.jpg"

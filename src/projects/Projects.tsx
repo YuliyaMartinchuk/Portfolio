@@ -1,21 +1,31 @@
 import React from 'react';
-import {image1, image2} from "./description/description";
+import {
+    calculator, descriptionCalculator, descriptionProjects,
+    descriptionSocialNetWork,
+    descriptionTodolist,
+    socialNetWork,
+    todolist
+} from "./description/description";
 import {Container} from "../common/styles/Container";
 import {ProjectsContainer} from "./ProjectsStyle";
 import {Project, ProjectType} from "./project/Project";
-import {Title} from '../common/styles/common';
 
 
 const project: ProjectType[] = [
     {
-        image: image1,
+        image: todolist,
         title: 'Todolist',
-        description: 'This course is designed for women who want to learn how to convert their online traffic into paying customers. We\'ll teach you how to identify your target audience, create compelling content, and use effective strategies to turn your website visitors into loyal fans. '
+        description: descriptionTodolist
     },
     {
-        image: image2,
+        image: socialNetWork,
         title: 'Social Network',
-        description: 'This course is designed for women who want to learn how to convert their online traffic into paying customers. We\'ll teach you how to identify your target audience, create compelling content, and use effective strategies to turn your website visitors into loyal fans. '
+        description: descriptionSocialNetWork
+    },
+    {
+        image: calculator,
+        title: 'Calculator',
+        description: descriptionCalculator
     },
 ]
 
@@ -23,12 +33,13 @@ export const Projects = () => {
     return (
 
         <Container>
-            <ProjectsContainer>
-                <div>
-                    <div>
-                        <Title>Projects</Title>
+            <ProjectsContainer id={"ProjectsContainer"}>
+                <div id={"WrapperForColumns"}>
+                    <div id={"Text"}>
+                        <h2>Projects</h2>
+                        <p>{descriptionProjects}</p>
                     </div>
-                    <div>
+                    <div id={"Projects"}>
                         {project.map((project) => (
                             <Project image={project.image}
                                      title={project.title}
