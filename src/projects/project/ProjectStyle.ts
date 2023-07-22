@@ -47,6 +47,7 @@ export const ImageContainer = styled.div`
 
   a {
     background-color: #666667;
+    font-family: Poppins, sans-serif;
     padding: 15px 25px;
     cursor: pointer;
     opacity: 0.7;
@@ -96,7 +97,9 @@ export const DescriptionContainer = styled.div`
   p {
     margin-top: 0;
     margin-bottom: 10px;
-    width: 100%;
+    width: 100%; 
+    font-family: Poppins, sans-serif;
+    
 
   }
 

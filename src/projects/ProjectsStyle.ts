@@ -32,19 +32,23 @@ export const ProjectsContainer = styled.div`
         font-weight: 300;
         line-height: .9;
         color: rgba(30, 30, 147);
+        p {
+          font-family: Poppins, sans-serif;
+          margin-top: 2vh;
+          text-transform: capitalize;
+          position: sticky;
+          width: 100%;
+          font-size: 20px;
+          color: black;
+          line-height: 1.2;
+        }
 
         &:hover {
           filter: brightness(0.7);
         }
       }
 
-      p {
-        top: 40vh;
-        position: sticky;
-        margin-top: 0;
-        margin-bottom: 10px;
-        width: 100%;
-      }
+     
     }
 
     div {

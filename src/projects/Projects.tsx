@@ -36,8 +36,10 @@ export const Projects = () => {
             <ProjectsContainer id={"ProjectsContainer"}>
                 <div id={"WrapperForColumns"}>
                     <div id={"Text"}>
-                        <h2>Projects</h2>
-                        <p>{descriptionProjects}</p>
+                        <h2>Projects
+                            <p>{descriptionProjects}</p>
+                        </h2>
+
                     </div>
                     <div id={"Projects"}>
                         {project.map((project) => (
