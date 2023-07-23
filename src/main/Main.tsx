@@ -6,9 +6,9 @@ import {image} from "./description/description";
 
 export const Main = () => {
     return (
-        <MainWrapper>
+        <MainWrapper id={"main"}>
             <Container>
-                <MainContainer>
+                <MainContainer >
                     <MainText>
                         <span>Hi There</span>
                         <h1>I am Yuliya Martinchuk</h1>

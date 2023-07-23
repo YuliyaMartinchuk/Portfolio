@@ -3,8 +3,8 @@ import {
     ButtonForm,
     ContactFormContainer, ContactFormMainTitle, ContactFormText,
     ContactFormTitle,
-    ContactFormWrapper,
-     Field,
+    ContactFormWrapper, ContainerForm,
+    Field,
     Form,
 } from "./ContactFormStyle";
 import React from "react";
@@ -16,8 +16,14 @@ export const ContactForm = () => {
             <Container>
                 <ContactFormContainer>
                     <ContactFormMainTitle>Contacts</ContactFormMainTitle>
+                    <ContactFormTitle>CONTACT
+                        <p>
+                            ME
+                        </p>
+                    </ContactFormTitle>
+                    <ContainerForm>
+
                    <Form>
-                       <ContactFormTitle>CONTACT ME</ContactFormTitle>
                        <ContactFormText> {"Name:"}</ContactFormText>
                        <Field placeholder = "Write your name here.."/>
                        <ContactFormText> {"Email:"}</ContactFormText>
@@ -26,6 +32,7 @@ export const ContactForm = () => {
                        <Field placeholder = "What would you like to tell me..."/>
                        <ButtonForm type={"submit"}>Send Message</ButtonForm>
                    </Form>
+                    </ContainerForm>
 
                 </ContactFormContainer>
             </Container>

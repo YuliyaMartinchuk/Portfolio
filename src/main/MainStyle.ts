@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const MainWrapper = styled.div`
   border: black 1px solid;
 `
