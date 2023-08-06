@@ -1,5 +1,5 @@
 import React from 'react';
-import {DescriptionContainer, ImageContainer, ProjectContainer, projectStyle} from "./ProjectStyle";
+import { ProjectContainer} from "./ProjectStyle";
 
 
 export type ProjectType = {
@@ -12,16 +12,16 @@ export type ProjectType = {
 
 export const Project = (props: ProjectType) => {
     return (
-    <ProjectContainer id={"ProjectContainer"} style={projectStyle}>
-        <ImageContainer>
+    <ProjectContainer id={"ProjectContainer"} >
+        <div id={"ImageContainer"}>
             <img src={props.image}/>
             <a>See project</a>
-        </ImageContainer>
+        </div>
 
-        <DescriptionContainer>
+        <div id={"TextContainer"}>
             <h3>{props.title}</h3>
             <p>{props.description}</p>
-        </DescriptionContainer>
+        </div>
 
     </ProjectContainer>
     );

@@ -63,13 +63,12 @@ export const ContactFormTitle = styled.h2`
   
 `
 export const ContactFormText = styled.h3`
-  before{content:attr(type);
+  :before{content:attr(type);
     display:block;
     margin:28px 0 0;
     font-size:14px;
     color:#5a5a5a}
   @media  (max-width: 350px) {
-
     word-break: break-all;
   }
 `
@@ -101,7 +100,6 @@ export const Field = styled.input`
   border-bottom: 1px solid #1d1d15;
   flex: 0 auto;
   padding-left: 0;
-
   &:focus{
     border-bottom:2px solid #78788c
   }

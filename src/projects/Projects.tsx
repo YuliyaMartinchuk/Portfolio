@@ -31,15 +31,13 @@ const project: ProjectType[] = [
 
 export const Projects = () => {
     return (
-
-        <Container>
+        <Container id={"Container"}>
             <ProjectsContainer id={"ProjectsContainer"}>
-                <div id={"WrapperForColumns"}>
+
                     <div id={"Text"}>
                         <h2>Projects
                             <p>{descriptionProjects}</p>
                         </h2>
-
                     </div>
                     <div id={"Projects"}>
                         {project.map((project) => (
@@ -49,7 +47,7 @@ export const Projects = () => {
                             />
                         ))}
                     </div>
-                </div>
+
             </ProjectsContainer>
         </Container>
 

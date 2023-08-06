@@ -15,7 +15,6 @@ export const SkillsContainer = styled.div`
 
 export const SkillsTitle = styled.h2`
   background-color: #a27dc4;
-
   &:hover {
     filter: brightness(0.7);
   }

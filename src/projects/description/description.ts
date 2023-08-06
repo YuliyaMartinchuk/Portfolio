@@ -1,8 +1,8 @@
 export const descriptionTodolist: string = "Todolist is a task management application designed for those who want to organize their lives and increase their productivity. This application provides an easy and convenient way to create, track and manage tasks." +
-    "Todolist is designed to help people manage their time and improve their work efficiency. This application allows users to easily create new lists with different purposes, with new tasks, mark the status of these tasks (completed / failed)." +
-    "Todolist is an indispensable application for every person."
+    " This application allows users to easily create new lists with different purposes, with new tasks, mark the status of these tasks (completed / failed)."
+
 export const descriptionSocialNetWork: string = "SocialSphere is a unique social network designed with the needs and interests of users in mind. The purpose of the network is to create a space where people can connect, share their thoughts, ideas and experiences, find new friends and mentors, and expand their horizons." +
-    "SocialSphere is a social network created for people who want to share their ideas and find support in a community of like-minded people." + "Todolist is an indispensable application for every person."
+    "SocialSphere is a social network created for people who want to share their ideas and find support in a community of like-minded people."
 export const descriptionCalculator: string = "SmartCalc is a calculator designed to help you easily perform calculations and solve mathematical problems. The calculator provides users with a simple and intuitive interface to quickly and efficiently perform any calculation." +
     " SmartCalc to help people simplify and speed up their work with mathematical calculations. The calculator provides fast and accurate results in all operations, allowing users to save time and improve their efficiency."
 export const descriptionProjects: string =  "This section contains projects developed by me.\n" +

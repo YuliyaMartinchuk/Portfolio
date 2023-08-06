@@ -33,7 +33,6 @@ export const ContactForm = () => {
                        <ButtonForm type={"submit"}>Send Message</ButtonForm>
                    </Form>
                     </ContainerForm>
-
                 </ContactFormContainer>
             </Container>
         </ContactFormWrapper>
