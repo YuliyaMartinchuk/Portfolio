@@ -1,22 +1,21 @@
 import React from 'react';
-import {MainContainer, MainImage, MainText, MainWrapper} from "./MainStyle";
+import {MainContainer} from "./MainStyle";
 import {Container} from "../common/styles/Container";
 import {image} from "./description/description";
 
 
 export const Main = () => {
     return (
-        <MainWrapper id={"main"}>
-            <Container>
-                <MainContainer >
-                    <MainText>
-                        <span>Hi There</span>
-                        <h1>I am Yuliya Martinchuk</h1>
-                        <p>FRONTEND DEVELOPER</p>
-                    </MainText>
-                    <MainImage image={image} />
+            <Container >
+                <MainContainer id="intro" image={image}>
+                    <div>
+                        <p>HI there</p>
+                        <p>  I am  <span>Yuliya Martinchuk</span></p>
+                        <span>  FRONTEND DEVELOPER</span>
+                    </div>
+                    <img/>
                 </MainContainer>
             </Container>
-        </MainWrapper>
+
     );
 };

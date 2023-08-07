@@ -14,7 +14,6 @@ export const ProjectContainer = styled.div`
   div {
     display: flex;
     position: relative;
-   
     margin-bottom: 0;
    
     img {

@@ -15,7 +15,7 @@ export const Footer = () => {
         <FooterWrapper>
             <Container>
                 <FooterContainer>
-                    <FooterTitle>Yuliya Martinchuk</FooterTitle>
+                    <FooterTitle>You can find me here:</FooterTitle>
                     <FooterContacts>
                         <FooterContact image={image1}/>
                         <FooterContact image={image2}/>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {primaryColor} from "../common/styles/variables"
 
 export const FooterWrapper = styled.div`
   padding: 100px 0 30px;
@@ -15,11 +16,12 @@ export const FooterContainer = styled.div`
 `
 
 export const FooterTitle = styled.h2`
-  background-color: #a27dc4;
-  margin:  0 0 10%;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 55px;
+  font-weight: 300;
+  line-height: .9;
+  color: ${primaryColor};
   &:hover {
     filter: brightness(0.7);
   }
