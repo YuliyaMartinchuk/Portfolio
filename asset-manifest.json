@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3ce23c5e.css",
-    "main.js": "/Portfolio/static/js/main.0c823d8f.js",
+    "main.css": "/Portfolio/static/css/main.58952b07.css",
+    "main.js": "/Portfolio/static/js/main.c32b90aa.js",
     "static/js/651.0651393f.chunk.js": "/Portfolio/static/js/651.0651393f.chunk.js",
+    "static/media/Butler-Light.woff": "/Portfolio/static/media/Butler-Light.0f611ba77f34a9b066c6.woff",
+    "static/media/Butler-Light.woff2": "/Portfolio/static/media/Butler-Light.73f35be5f5758a25d7a4.woff2",
     "index.html": "/Portfolio/index.html",
-    "main.3ce23c5e.css.map": "/Portfolio/static/css/main.3ce23c5e.css.map",
-    "main.0c823d8f.js.map": "/Portfolio/static/js/main.0c823d8f.js.map",
+    "main.58952b07.css.map": "/Portfolio/static/css/main.58952b07.css.map",
+    "main.c32b90aa.js.map": "/Portfolio/static/js/main.c32b90aa.js.map",
     "651.0651393f.chunk.js.map": "/Portfolio/static/js/651.0651393f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ce23c5e.css",
-    "static/js/main.0c823d8f.js"
+    "static/css/main.58952b07.css",
+    "static/js/main.c32b90aa.js"
   ]
 }
