@@ -5,11 +5,8 @@ export const SkillsWrapper = styled.div`
  
 `
 export const SkillsContainer = styled.div`
-  height: 100%;
-  width: 100%;
+  padding: 10% 0;
   display: flex;
-  align-items: center;
-  border: black solid 1px;
   flex-direction: column;
   text-align: center;
 `
@@ -17,11 +14,11 @@ export const SkillsContainer = styled.div`
 export const SkillsTitle = styled.h2`
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 0;
   font-size: 55px;
   font-weight: 300;
   line-height: .9;
   color: ${primaryColor};
+  margin-bottom: 40px;
   &:hover {
     filter: brightness(0.7);
   }

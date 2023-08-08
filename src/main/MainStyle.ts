@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {primaryColor, textColor, borderColor, bgColor} from "../common/styles/variables"
+import { borderColor, bgColor} from "../common/styles/variables"
 
 
 export const MainContainer = styled.div<MainImageType>`
@@ -9,23 +9,23 @@ export const MainContainer = styled.div<MainImageType>`
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
+  width: 100%;
   div {
     width: 400px;
     text-align: center;
     font-size: 55px;
     font-weight: 300;
     line-height: 1.1;
+    font-family: Butler, sans-serif;
+    color: ${bgColor};
     p {
-      font-family: Butler, sans-serif;
       span {
         font-family: Pinyon Script, sans-serif;
-        color: ${textColor};
+        color: ${bgColor};
         letter-spacing: 0.1em;
       }
     }
     span {
-      font-family: Butler, sans-serif;
-      color: ${primaryColor};
     }
     @media  (max-width: 450px) {
       width: 100%;

@@ -17,7 +17,7 @@ export const FooterContainer = styled.div`
 
 export const FooterTitle = styled.h2`
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   font-size: 55px;
   font-weight: 300;
   line-height: .9;
@@ -31,7 +31,6 @@ export const FooterTitle = styled.h2`
 `
 
 export const FooterContacts = styled.ul`
-  background-color: aquamarine;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -56,7 +55,6 @@ export const FooterContact = styled.li<FooterContactType>`
   height: 40px;
   width: 40px;
   list-style-type: none;
-  background-color: rgba(91, 168, 252, 0.84);
   background-image: url(${props => props.image});
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,7 +67,6 @@ export const FooterContact = styled.li<FooterContactType>`
 `
 
 export const FooterInformation = styled.h3`
-  background-color: #a27dc4;
   height: 100%;
   margin:  10% 0 0;
 `

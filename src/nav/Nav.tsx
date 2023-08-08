@@ -1,14 +1,14 @@
 import React from 'react';
-import {NavElement, NavWrapper} from "./NavStyle";
+import {NavContainer} from "./NavStyle";
 
 export const Nav = () => {
     return (
-        <NavWrapper >
-          <NavElement href={""}>Main</NavElement>
-          <NavElement href={""}>Skills</NavElement>
-          <NavElement href={""}>Projects</NavElement>
-          <NavElement href={""}>Contacts</NavElement>
-        </NavWrapper>
+        <NavContainer >
+          <a href={""}>Main</a>
+          <a href={""}>Skills</a>
+          <a href={""}>Projects</a>
+          <a href={""}>Contacts</a>
+        </NavContainer>
     );
 };
 

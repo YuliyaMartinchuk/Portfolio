@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const SkillContainer = styled.div`
   width: 250px;
-  background-color: #1d1d15;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,15 +32,14 @@ export const SkillImage = styled.div<SkillIconsType>`
 `
 
 export const SkillTitle = styled.h3`
-  background-color: rgba(91, 168, 252, 0.84);
   &:hover {
     filter: brightness(0.7);
   }
 `
 
-export const SkillDescription = styled.span`
-  background-color: rgba(255, 151, 151, 0.75);
-  width: 100%;
-  padding-bottom: 10px;
- 
-`
+// export const SkillDescription = styled.span`
+//   background-color: rgba(255, 151, 151, 0.75);
+//   width: 100%;
+//   padding-bottom: 10px;
+//
+// `
