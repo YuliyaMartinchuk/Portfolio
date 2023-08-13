@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {FC} from 'react';
 import { ProjectContainer} from "./ProjectStyle";
+import {ContactsType} from "../../header/Contacts";
 
 
 export type ProjectType = {
@@ -10,17 +11,17 @@ export type ProjectType = {
 
 
 
-export const Project = (props: ProjectType) => {
+export const Project: FC<ProjectType> = ({image,title,description}) => {
     return (
     <ProjectContainer id={"ProjectContainer"} >
         <div id={"ImageContainer"}>
-            <img src={props.image}/>
+            <img src={image}/>
             <a>See project</a>
         </div>
 
         <div id={"TextContainer"}>
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
+            <h3>{title}</h3>
+            <p>{description}</p>
         </div>
 
     </ProjectContainer>

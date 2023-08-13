@@ -34,20 +34,21 @@ export const Projects = () => {
         <Container id={"Container"}>
             <ProjectsContainer id={"ProjectsContainer"}>
 
-                    <div id={"Text"}>
-                        <h2>Projects
-                            <p>{descriptionProjects}</p>
-                        </h2>
-                    </div>
-                    <div id={"Projects"}>
-                        {project.map((project) => (
-                            <Project image={project.image}
-                                     title={project.title}
-                                     description={project.description}
-                            />
-                        ))}
-                    </div>
-
+                <div id={"Text"}>
+                    <h2>Projects
+                        <p>{descriptionProjects}</p>
+                    </h2>
+                </div>
+                <div id={"Projects"}>
+                    {project.map((project, index) => (
+                        <Project
+                            key={index}
+                            image={project.image}
+                            title={project.title}
+                            description={project.description}
+                        />
+                    ))}
+                </div>
             </ProjectsContainer>
         </Container>
 

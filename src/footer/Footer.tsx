@@ -1,31 +1,40 @@
 import {Container} from "../common/styles/Container";
-import { image1, image2, image3, image4} from "./description/description";
 import React from "react";
 import {
-    FooterContact,
     FooterContacts,
-    FooterContainer, FooterInformation,
-    FooterTitle,
-    FooterWrapper,
+    FooterContainer,
 } from "./FooterStyle";
+import {Contacts, ContactsType} from "../header/Contacts";
+import linkedinIcon from "../assets/img/linkedinIcon.svg"
+import telegramIcon from "../assets/img/telegramIcon.svg"
+import githubIcon from "../assets/img/githubIcon.svg"
 
+
+const contacts: ContactsType[] = [
+    {icon: linkedinIcon, href: 'https://www.linkedin.com/in/yuliya-martinchuk-70bb3126b'},
+    {icon: telegramIcon, href: 'https://t.me/yuliya_martinchuk'},
+    {icon: githubIcon, href: 'https://github.com/YuliyaMartinchuk'},
+]
 
 export const Footer = () => {
     return (
-        <FooterWrapper>
-            <Container>
-                <FooterContainer>
-                    <FooterTitle>You can find me here:</FooterTitle>
-                    <FooterContacts>
-                        <FooterContact image={image1}/>
-                        <FooterContact image={image2}/>
-                        <FooterContact image={image3}/>
-                        <FooterContact image={image4}/>
-                    </FooterContacts>
-                    <FooterInformation>© 2023</FooterInformation>
-                </FooterContainer>
-            </Container>
-        </FooterWrapper>
+        <Container id={"Container"}>
+            <FooterContainer id={"FooterContainer"}>
+                <h2>You can find me here:</h2>
+                <FooterContacts>
+                    {contacts.map((contact, index) => {
+                        return (
+                            <Contacts
+                                key={index}
+                                icon={contact.icon}
+                                href={contact.href}
+                            />
+                        )
+                    })}
+                </FooterContacts>
+                <span>© 2023</span>
+            </FooterContainer>
+        </Container>
     )
 };
 
