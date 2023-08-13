@@ -1,12 +1,12 @@
 import React, {FC} from 'react';
 
-export type ContactsType = {
+export type FooterContactType = {
     icon: string
     href: string
 }
 
 
-export const Contacts: FC<ContactsType> = ({icon, href}) => {
+export const FooterContact: FC<FooterContactType> = ({icon, href}) => {
     return (
         <a href={href}
            target="_blank"

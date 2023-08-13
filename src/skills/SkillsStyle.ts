@@ -22,6 +22,10 @@ export const SkillsTitle = styled.h2`
   &:hover {
     filter: brightness(0.7);
   }
+  @media (max-width: 500px) {
+    font-size: 40px;
+
+  }
 `
 
 export const SkillsElements = styled.ul`

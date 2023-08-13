@@ -9,6 +9,7 @@ export const SkillContainer = styled.div`
   border: 1px solid;
   margin: 2% 0;
   padding: 10px;
+ 
   @media (max-width: 250px) {
     width: 100%;
   }

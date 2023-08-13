@@ -1,15 +1,11 @@
 import React, {FC} from 'react';
 import { ProjectContainer} from "./ProjectStyle";
-import {ContactsType} from "../../header/Contacts";
-
 
 export type ProjectType = {
     image: string
     title: string
     description: string
 }
-
-
 
 export const Project: FC<ProjectType> = ({image,title,description}) => {
     return (

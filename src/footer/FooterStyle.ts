@@ -16,6 +16,9 @@ export const FooterContainer = styled.div`
     font-weight: 300;
     line-height: .9;
     color: ${primaryColor};
+    @media (max-width: 500px) {
+      font-size: 40px;
+    }
 
     &:hover {
       filter: brightness(0.7);

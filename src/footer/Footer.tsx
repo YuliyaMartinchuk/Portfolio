@@ -4,13 +4,13 @@ import {
     FooterContacts,
     FooterContainer,
 } from "./FooterStyle";
-import {Contacts, ContactsType} from "../header/Contacts";
+import {FooterContact, FooterContactType} from "./Contacts";
 import linkedinIcon from "../assets/img/linkedinIcon.svg"
 import telegramIcon from "../assets/img/telegramIcon.svg"
 import githubIcon from "../assets/img/githubIcon.svg"
 
 
-const contacts: ContactsType[] = [
+const contacts: FooterContactType[] = [
     {icon: linkedinIcon, href: 'https://www.linkedin.com/in/yuliya-martinchuk-70bb3126b'},
     {icon: telegramIcon, href: 'https://t.me/yuliya_martinchuk'},
     {icon: githubIcon, href: 'https://github.com/YuliyaMartinchuk'},
@@ -24,7 +24,7 @@ export const Footer = () => {
                 <FooterContacts>
                     {contacts.map((contact, index) => {
                         return (
-                            <Contacts
+                            <FooterContact
                                 key={index}
                                 icon={contact.icon}
                                 href={contact.href}

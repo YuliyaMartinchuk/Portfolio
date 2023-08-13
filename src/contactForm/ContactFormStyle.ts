@@ -1,129 +1,106 @@
 import styled from "styled-components";
+import {borderColor, primaryColor, bgColor} from "../common/styles/variables"
 
-export const ContactFormWrapper = styled.div`
-  width: 100%;
-  min-height: 400px;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  flex-direction: row;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  grid-auto-columns: 1fr;
-  padding: 20px;
-  display: grid;
-`
 
 export const ContactFormContainer = styled.div`
   width: 100%;
   height: auto;
-  grid-row-gap: 10px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #1d1d15;
+  border: 1px solid ${borderColor};
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5vw;
   display: flex;
   position: relative;
- 
-`
 
-export const ContactFormMainTitle = styled.h2`
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  position: sticky;
-  font-size: 55px;
-  font-weight: 300;
-  line-height: .9;
-  color: rgba(30, 30, 147);
-`
-
-export const ContactFormTitle = styled.h2`
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: Butler, sans-serif;
-  font-size: 55px;
-  font-weight: 300;
-  line-height: .9;
-  p {
-    letter-spacing: 0;
-    text-transform: capitalize;
+  h2 {
+    text-transform: uppercase;
     margin-top: 0;
-    font-family: Pinyon Script, sans-serif;
-    font-weight: 400;
-    line-height: .8;
-  }
-  @media  (max-width: 350px) {
-    width: 80%;
+    margin-bottom: 0;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: .9;
+    color: ${primaryColor};
     word-break: break-all;
+
+    @media (max-width: 500px) {
+      font-size: 40px;
+
+    }
   }
-  
-`
-export const ContactFormText = styled.h3`
-  :before{content:attr(type);
-    display:block;
-    margin:28px 0 0;
-    font-size:14px;
-    color:#5a5a5a}
-  @media  (max-width: 350px) {
-    word-break: break-all;
+
+  p {
+    margin-top: 3%;
+    font-size: 40px;
+    margin-bottom: 0;
+    @media (max-width: 500px) {
+      font-size: 30px;
+
+    }
+
+    span {
+      text-transform: capitalize;
+      font-family: Pinyon Script, sans-serif;
+      font-weight: 400;
+      line-height: .8;
+    }
   }
+
 `
 
 export const ContainerForm = styled.div`
   width: 70%;
-`
+  border: none;
 
-export const Form = styled.form`
-  width: 100%;
-  grid-column-gap: 15px;
-  flex-direction: row;
-  margin-bottom: 0;
-  display: flex;
-  @media  (max-width: 450px) {
-    width: 95%;
-    height: 60%;
-    
+  form {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 0;
+    display: flex;
+
+    h3 {
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      word-break: break-all;
+    }
+
+    input {
+      width: 100%;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0);
+      color: ${borderColor};
+      border: 1px rgba(0, 0, 0, .5);
+      border-bottom: 1px solid ${borderColor};
+
+      &:focus {
+        border-bottom: 2px solid #78788c
+      }
+    }
+
+    button {
+      height: 50px;
+      color: ${bgColor};
+      text-transform: uppercase;
+      background-color: ${borderColor};
+      justify-content: center;
+      align-items: center;
+      margin-top: 3%;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-family: Butler, sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      transition: color .2s, opacity .2s;
+      position: relative;
+
+      &:hover {
+        background: ${primaryColor};
+        color: #fff
+      }
+    }
   }
+
 `
 
 
-export const Field = styled.input`
-  width: 100%;
-  height: 50px;
-  color: #1d1d15;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px rgba(0, 0, 0, .5);
-  border-bottom: 1px solid #1d1d15;
-  flex: 0 auto;
-  padding-left: 0;
-  &:focus{
-    border-bottom:2px solid #78788c
-  }
-  
-`
-
-export const ButtonForm = styled.button`
-  height: 50px;
-  color: #ebece6;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #1d1d15;
-  justify-content: center;
-  align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-family: Butler, sans-serif;
-  font-size: 13px;
-  font-weight: 300;
-  transition: color .2s, opacity .2s;
-  display: flex;
-  position: relative;
-  &:hover{
-    background:#78788c;
-    color:#fff}
-  
-`

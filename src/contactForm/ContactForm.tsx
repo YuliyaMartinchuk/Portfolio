@@ -1,41 +1,36 @@
 import { Container } from "../common/styles/Container";
 import {
-    ButtonForm,
-    ContactFormContainer, ContactFormMainTitle, ContactFormText,
-    ContactFormTitle,
-    ContactFormWrapper, ContainerForm,
-    Field,
-    Form,
+        ContactFormContainer,
+     ContainerForm,
+
+
 } from "./ContactFormStyle";
 import React from "react";
 
 
 export const ContactForm = () => {
     return (
-        <ContactFormWrapper>
-            <Container>
-                <ContactFormContainer>
-                    <ContactFormMainTitle>Contacts</ContactFormMainTitle>
-                    <ContactFormTitle>CONTACT
-                        <p>
-                            ME
+            <Container id={"Container"}>
+                <ContactFormContainer id={"ContactFormContainer"}>
+                        <h2>Contacts</h2>
+                        <p>CONTACT
+                            <span>
+                              ME
+                        </span>
                         </p>
-                    </ContactFormTitle>
-                    <ContainerForm>
-
-                   <Form>
-                       <ContactFormText> {"Name:"}</ContactFormText>
-                       <Field placeholder = "Write your name here.."/>
-                       <ContactFormText> {"Email:"}</ContactFormText>
-                       <Field placeholder = "Let us know how to contact you back.."/>
-                       <ContactFormText> {"Leave your message:"}</ContactFormText>
-                       <Field placeholder = "What would you like to tell me..."/>
-                       <ButtonForm type={"submit"}>Send Message</ButtonForm>
-                   </Form>
-                    </ContainerForm>
+                        <ContainerForm id={"ContainerForm"}>
+                            <form>
+                                <h3> {"Name:"}</h3>
+                                <input placeholder = "Write your name here.."/>
+                                <h3> {"Email:"}</h3>
+                                <input placeholder = "Let us know how to contact you back.."/>
+                                <h3> {"Leave your message:"}</h3>
+                                <input placeholder = "What would you like to tell me..."/>
+                                <button type={"submit"}>Send Message</button>
+                            </form>
+                        </ContainerForm>
                 </ContactFormContainer>
             </Container>
-        </ContactFormWrapper>
 
     );
 };

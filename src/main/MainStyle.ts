@@ -27,10 +27,11 @@ export const MainContainer = styled.div<MainImageType>`
     }
     span {
     }
-    @media  (max-width: 450px) {
+    @media  (max-width: 500px) {
       width: 100%;
       word-wrap: break-word;
       overflow-wrap: break-word;
+      font-size: 40px;
   }}
   img {
     width: 300px;

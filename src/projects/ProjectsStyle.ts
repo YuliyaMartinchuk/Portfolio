@@ -20,6 +20,10 @@ export const ProjectsContainer = styled.div`
         font-weight: 300;
         line-height: .9;
         color: ${primaryColor};
+        @media (max-width: 500px) {
+          font-size: 40px;
+
+        }
         p {
           font-family: Poppins, sans-serif;
           margin-top: 2vh;
