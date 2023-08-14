@@ -4,7 +4,7 @@ import {
     FooterContacts,
     FooterContainer,
 } from "./FooterStyle";
-import {FooterContact, FooterContactType} from "./Contacts";
+import {FooterContact, FooterContactType} from "./FooterContacts";
 import linkedinIcon from "../assets/img/linkedinIcon.svg"
 import telegramIcon from "../assets/img/telegramIcon.svg"
 import githubIcon from "../assets/img/githubIcon.svg"

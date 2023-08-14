@@ -9,7 +9,7 @@ export const ContactFormContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5vw;
+  padding: 4vw;
   display: flex;
   position: relative;
 

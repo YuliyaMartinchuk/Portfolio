@@ -1,18 +1,17 @@
-import React from 'react';
-import {SkillContainer, SkillImage, SkillTitle} from './SkillStyle';
+import React, {FC} from 'react';
+import {SkillContainer} from './SkillStyle';
 
-export type PropsType = {
+
+export type SkillType = {
     image: string
     title: string
-    description: string
 }
 
-
-export const Skill = (props: PropsType) => {
+export const Skill: FC<SkillType> = ({image,title}) => {
     return (
-        <SkillContainer >
-            <SkillImage backgroundImage={props.image} />
-            <SkillTitle>{props.title}</SkillTitle>
+        <SkillContainer id={"SkillContainer"}>
+            <img src={image} />
+            <p>{title}</p>
         </SkillContainer>
     );
 };
