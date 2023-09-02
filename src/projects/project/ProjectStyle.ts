@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import {borderColor, hrefColor, primaryColor} from "../../common/styles/variables"
+import {
+    bgColor,
+    borderColor,
+    hrefColor,
+    primaryColor
+} from "../../common/styles/variables"
 
 
 export const ProjectContainer = styled.div`
@@ -40,6 +45,7 @@ export const ProjectContainer = styled.div`
       &:hover {
         opacity: 1;
         background-color: ${primaryColor};
+        color: ${bgColor};
       }
 
       &:active {
