@@ -6,9 +6,11 @@ import {
 import React from "react";
 
 
+
 export const ContactForm = () => {
     return (
             <Container id={"Container"}>
+                <div style={{paddingTop:"100px"}}>
                 <ContactFormContainer id={"ContactFormContainer"}>
                         <h2>Contacts</h2>
                         <p>CONTACT
@@ -28,6 +30,7 @@ export const ContactForm = () => {
                             </form>
                         </ContainerForm>
                 </ContactFormContainer>
+                </div>
             </Container>
 
     );

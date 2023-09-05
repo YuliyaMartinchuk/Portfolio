@@ -11,6 +11,7 @@ import {ProjectsContainer} from "./ProjectsStyle";
 import {Project, ProjectType} from "./project/Project";
 
 
+
 const project: ProjectType[] = [
     {
         image: todolist,
@@ -33,12 +34,12 @@ export const Projects = () => {
     return (
         <Container id={"Container"}>
             <ProjectsContainer id={"ProjectsContainer"}>
-
                 <div id={"Text"}>
                     <h2>Projects
                         <p>{descriptionProjects}</p>
                     </h2>
                 </div>
+
                 <div id={"Projects"}>
                     {project.map((project, index) => (
                         <Project

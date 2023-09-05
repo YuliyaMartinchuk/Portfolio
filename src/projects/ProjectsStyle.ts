@@ -3,7 +3,7 @@ import {textColor,primaryColor} from "../common/styles/variables"
 
 
 export const ProjectsContainer = styled.div`
-  padding: 10% 0;
+  padding-top: 100px;
   display: grid;
   grid-column-gap: 5vw;
   grid-template-columns: 1fr 3fr;

@@ -3,6 +3,7 @@ import { borderColor, bgColor} from "../common/styles/variables"
 
 
 export const MainContainer = styled.div<MainImageType>`
+  padding-top: 100px;
   border: black 1px solid;
   margin: 0 auto;
   display: flex;

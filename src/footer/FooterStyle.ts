@@ -25,10 +25,6 @@ export const FooterContainer = styled.div`
     }
   }
 
-  div {
-
-  }
-
   span {
     height: 100%;
     margin: 5% 0 0;

@@ -31,7 +31,6 @@ const skill: SkillType[] = [
 
 export const Skills = () => {
     return (
-
         <Container id={"Container"}>
             <SkillsContainer id={"SkillsContainer"}>
                 <h2>Skills</h2>

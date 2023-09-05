@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {  bgColor} from "../common/styles/variables"
+import {bgColor} from "../common/styles/variables"
 
 
 export const NavContainer = styled.div`
@@ -13,5 +13,17 @@ export const NavContainer = styled.div`
     font-size: 14px;
     font-weight: 200;
     line-height: 1.4;
+    cursor: pointer;
+    &.active  {
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase
+    }
+    &:hover{
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase
+      
+    }
   }
 `

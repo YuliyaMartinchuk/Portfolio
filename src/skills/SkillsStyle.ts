@@ -3,7 +3,7 @@ import {primaryColor} from "../common/styles/variables"
 
 
 export const SkillsContainer = styled.div`
-  padding-top: 10% ;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   text-align: center;
