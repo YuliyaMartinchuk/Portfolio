@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { borderColor, bgColor} from "../common/styles/variables"
 
 
-export const MainContainer = styled.div<MainImageType>`
+export const MainContainer = styled.div`
   padding-top: 100px;
   border: black 1px solid;
   margin: 0 auto;
@@ -35,24 +35,21 @@ export const MainContainer = styled.div<MainImageType>`
       font-size: 40px;
   }}
   img {
-    width: 300px;
-    height: 400px;
+    width: 550px;
+    height: 600px;
     background-color: ${bgColor};
-    background-image: url(${props => props.image});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
     border: 1px solid ${borderColor};
+    filter: brightness(0.85);
     &:hover {
       filter: brightness(0.7);
     }
-    @media  (max-width: 350px) {
-      width: 100%;
+    @media  (max-width: 550px) {
+      width: 90%;
+      height: 450px;
     }
   }
   
-  @media  (max-width: 830px) {
-    width: 100%;
+  @media  (max-width: 930px) {
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
@@ -60,7 +57,4 @@ export const MainContainer = styled.div<MainImageType>`
   
 `
 
-type MainImageType = {
-    image:string
-}
 

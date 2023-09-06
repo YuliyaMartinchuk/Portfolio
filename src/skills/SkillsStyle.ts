@@ -27,7 +27,11 @@ export const SkillsContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 2% 2%;
+    @media (max-width: 380px) {
+      justify-content: center;
+    }
   }
+ 
 `
 
 

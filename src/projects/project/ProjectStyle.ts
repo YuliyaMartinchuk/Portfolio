@@ -32,10 +32,15 @@ export const ProjectContainer = styled.div`
     }
 
     a {
+      color: ${borderColor};
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
       background-color: ${hrefColor};
       font-family: Poppins, sans-serif;
       padding: 15px 25px;
       cursor: pointer;
+      line-height: 1.4;
       opacity: 0.7;
       position: absolute;
       top: 50%;
@@ -59,7 +64,7 @@ export const ProjectContainer = styled.div`
     align-items: flex-start;
     display: flex;
 
-    h3 {
+   h3 {
       letter-spacing: 1px;
       text-transform: uppercase;
       margin-top: 0;
@@ -67,6 +72,7 @@ export const ProjectContainer = styled.div`
       font-family: Poppins, sans-serif;
       font-size: 20px;
       font-weight: 600;
+     
 
       &:hover {
         color: ${primaryColor};

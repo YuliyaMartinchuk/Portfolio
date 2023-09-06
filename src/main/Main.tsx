@@ -1,10 +1,11 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {MainContainer} from "./MainStyle";
-import {image} from "./description/description";
+import me from "../assets/img/mee.jpg";
 
 
 //@ts-ignore
 import TOPOLOGY from "vanta/dist/vanta.topology.min"
+
 // Make sure window.THREE is defined, e.g. by including three.min.js in the document head using a <script> tag
 
 export const Main = () => {
@@ -31,13 +32,13 @@ export const Main = () => {
     }, [vantaEffect])
     return (
 
-                <MainContainer id={"MainContainer"} ref={myRef} image={image}>
+                <MainContainer id={"MainContainer"} ref={myRef} >
                     <div>
                         <p>HI there</p>
                         <p>  I am    <span>Yuliya Martinchuk</span> </p>
                         <span>  FRONTEND DEVELOPER</span>
                     </div>
-                    <img/>
+                    <img src={me}/>
                 </MainContainer>
 
     );

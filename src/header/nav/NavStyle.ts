@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {bgColor} from "../common/styles/variables"
+import {bgColor} from "../../common/styles/variables"
 
 
 export const NavContainer = styled.div`
@@ -26,4 +26,6 @@ export const NavContainer = styled.div`
       
     }
   }
+  @media screen and (max-width: 400px) {
+    display: none;
 `

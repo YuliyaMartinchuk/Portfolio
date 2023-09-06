@@ -46,6 +46,7 @@ export const ProjectsContainer = styled.div`
   @media (max-width: 767px) {
     grid-column-gap: 3vw;
     grid-template-columns: 1fr;
+   
   }
   
 
