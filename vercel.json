@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "express-products-vercel",
+  "name": "portfolio-vercel",
   "builds": [
     {
       "src": "src/index.ts",
