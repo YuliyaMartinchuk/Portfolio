@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    calculator, descriptionCalculator, descriptionProjects,
+    counter, descriptionCalculator, descriptionProjects,
     descriptionSocialNetWork,
     descriptionTodolist,
     socialNetWork,
@@ -18,21 +18,21 @@ const project: ProjectType[] = [
         image: todolist,
         title: 'Todolist',
         description: descriptionTodolist,
-        href: 'https://www.google.com/',
+        href: 'https://YuliyaMartinchuk.github.io/todolist-rtk',
         gitHubHref: 'https://github.com/YuliyaMartinchuk'
     },
     {
         image: socialNetWork,
         title: 'Social Network',
         description: descriptionSocialNetWork,
-        href: 'https://www.google.com/',
+        href: 'https://YuliyaMartinchuk.github.io/samurai-way',
         gitHubHref: 'https://github.com/YuliyaMartinchuk'
     },
     {
-        image: calculator,
-        title: 'Calculator',
+        image: counter,
+        title: 'counter',
         description: descriptionCalculator,
-        href: 'https://www.google.com/',
+        href: 'https://YuliyaMartinchuk.github.io/counter',
         gitHubHref: 'https://github.com/YuliyaMartinchuk'
     },
 ]

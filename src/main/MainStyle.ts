@@ -40,6 +40,7 @@ export const MainContainer = styled.div`
     background-color: ${bgColor};
     border: 1px solid ${borderColor};
     filter: brightness(0.85);
+    object-fit: cover;
     &:hover {
       filter: brightness(0.7);
     }

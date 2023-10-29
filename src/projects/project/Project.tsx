@@ -14,10 +14,12 @@ export const Project: FC<ProjectType> = ({image,title,description,href, gitHubHr
     <ProjectContainer id={"ProjectContainer"} >
         <div id={"ImageContainer"}>
             <img  src={image}/>
-            <a href={href} target="_blank" >See project</a>
+            <a href={href} target="_blank" className="project-link" >See project</a>
         </div>
         <div id={"TextContainer"}>
-            <h3 >{title}</h3>
+            <a href={href} target="_blank">
+                <h3>{title}</h3>
+            </a>
             <p>{description}</p>
         </div>
     </ProjectContainer>

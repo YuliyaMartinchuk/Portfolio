@@ -3,7 +3,7 @@ import {
     bgColor,
     borderColor,
     hrefColor,
-    primaryColor
+    primaryColor, textColor
 } from "../../common/styles/variables"
 
 
@@ -32,30 +32,32 @@ export const ProjectContainer = styled.div`
     }
 
     a {
-      color: ${borderColor};
       text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-      background-color: ${hrefColor};
-      font-family: Poppins, sans-serif;
-      padding: 15px 25px;
-      cursor: pointer;
-      line-height: 1.4;
-      opacity: 0.7;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      &:hover {
-        opacity: 1;
-        background-color: ${primaryColor};
-        color: ${bgColor};
+      &.project-link {
+        color: ${borderColor};
+        font-size: 16px;
+        font-weight: 500;
+        background-color: ${hrefColor};
+        font-family: Poppins, sans-serif;
+        padding: 15px 25px;
+        cursor: pointer;
+        line-height: 1.4;
+        opacity: 0.7;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:hover {
+          opacity: 1;
+          background-color: ${primaryColor};
+          color: ${bgColor};
+        }
+        &:active {
+          filter: brightness(1);
+        }
       }
-
-      &:active {
-        filter: brightness(1);
-      }
+     
+     
     }
   }
 
@@ -65,6 +67,7 @@ export const ProjectContainer = styled.div`
     display: flex;
 
    h3 {
+     color: ${textColor};
       letter-spacing: 1px;
       text-transform: uppercase;
       margin-top: 0;
@@ -73,7 +76,6 @@ export const ProjectContainer = styled.div`
       font-size: 20px;
       font-weight: 600;
      
-
       &:hover {
         color: ${primaryColor};
       }
