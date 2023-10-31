@@ -18,11 +18,11 @@ export const useLogin = () => {
                 errors.email = 'Invalid email address';
             }
 
-            if (!values.name) {
-                errors.name = 'Required';
-            } else if (values.name?.length < 2) {
-                errors.name = 'Please add more symbols';
-            }
+            // if (!values.name) {
+            //     errors.name = 'Required';
+            // } else if (values.name.length < 2) {
+            //     errors.name = 'Please add more symbols';
+            // }
             if (!values.message) {
                 errors.message = 'Required';
             }
