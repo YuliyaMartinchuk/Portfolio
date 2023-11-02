@@ -26,6 +26,7 @@ export const ContactForm = () => {
                             <form onSubmit={formik.handleSubmit}>
                                 <h3> {"Name:"}</h3>
                                 <input placeholder = "Write your name here.."
+                                       {...formik.getFieldProps("name")}
                                       />
                                 {formik.touched.name && formik.errors.name && <div style={{color: 'red'}}>{formik.errors.name}</div> }
                                 <h3> {"Email:"}</h3>
