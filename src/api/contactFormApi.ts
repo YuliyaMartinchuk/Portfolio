@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const instance = axios.create({
-    baseURL: 'https://node-js-gmail-ivory.vercel.app',
+    baseURL: 'https://gmail-server-one.vercel.app/',
 })
 
 export const contactFormApi = {
