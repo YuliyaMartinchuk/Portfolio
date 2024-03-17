@@ -7,6 +7,8 @@ import {Projects} from "./projects/Projects";
 import {ContactForm} from "./contactForm/ContactForm";
 import {Footer} from "./footer/Footer";
 import {Fade} from "react-awesome-reveal";
+import {CommonToast} from "./common/CommonToast";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const App = () => {
@@ -14,12 +16,13 @@ const App = () => {
         <div className="App">
             <Header/>
             <Fade>
-            <Main/>
-            <Skills/>
-            <Projects/>
-            <ContactForm/>
-           <Footer/>
+                <Main/>
+                <Skills/>
+                <Projects/>
+                <ContactForm/>
+                <Footer/>
             </Fade>
+            <CommonToast/>
         </div>
     );
 }

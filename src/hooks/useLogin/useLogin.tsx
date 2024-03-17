@@ -1,5 +1,7 @@
 import {contactFormApi, ContactFormValue} from "../../api/contactFormApi";
 import {useFormik} from "formik";
+import {toast} from "react-toastify";
+
 
 const initialValues: ContactFormValue = {
     name: '',
@@ -29,7 +31,17 @@ export const useLogin = () => {
             return errors
         },
         onSubmit:
-            async (values) => await contactFormApi.sendFormData(values)
+            async (values, {resetForm }) => {
+                try {
+                    await contactFormApi.sendFormData(values)
+                        .then(() => {
+                            toast.success("Thank you for your letter!")
+                        });
+                    resetForm()
+                } catch (error) {
+                    toast.error("Sorry, there's been an error");
+                }
+            }
     })
-    return { formik }
+    return {formik}
 }
