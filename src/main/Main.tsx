@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {MainContainer} from "./MainStyle";
-import me from "../assets/img/mee.jpg";
+import me from "../assets/img/mee (2).png";
 
 
 //@ts-ignore

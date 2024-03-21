@@ -35,12 +35,13 @@ export const MainContainer = styled.div`
       font-size: 40px;
   }}
   img {
-    width: 550px;
-    height: 600px;
-    background-color: ${bgColor};
-    border: 1px solid ${borderColor};
+    width: 800px;
+    height: 950px;
     filter: brightness(0.85);
-    object-fit: cover;
+    object-fit: cover;  
+    transition: opacity 0.3s ease;
+    background: transparent;
+    align-self: flex-end;
     &:hover {
       filter: brightness(0.7);
     }
